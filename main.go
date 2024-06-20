@@ -1,5 +1,5 @@
 package main
-///st
+///styor_
 import (
 	"fmt"
 	"os"
@@ -42,7 +42,7 @@ func main() {
 func listTagGroupsCommand() *cli.Command {
 	return &cli.Command{
 		Name:  "list-tag-groups",
-		Usage: "List1 the tag groups that will be applied by yor",
+		Usage: "List111 the tag groups that will be applied by yor",
 		Action: func(c *cli.Context) error {
 			return listTagGroups()
 		},
