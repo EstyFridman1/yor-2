@@ -1,5 +1,4 @@
 package main
-///styor_
 import (
 	"fmt"
 	"os"
@@ -42,7 +41,7 @@ func main() {
 func listTagGroupsCommand() *cli.Command {
 	return &cli.Command{
 		Name:  "list-tag-groups",
-		Usage: "List111 the tag groups that will be applied by yor",
+		Usage: "List the tag groups that will be applied by yor",
 		Action: func(c *cli.Context) error {
 			return listTagGroups()
 		},
@@ -257,7 +256,7 @@ func listTags(options *clioptions.ListTagsOptions) error {
 	for _, group := range options.TagGroups {
 		tagGroup = utils.TagGroupsByName(utils.TagGroupName(group))
 		if tagGroup == nil {
-			return fmt.Errorf("tag group %v is not supported", group)
+			return fmt.Errorf("tag group %v is not supported 123", group)
 		}
 		tagGroup.InitTagGroup("", nil, nil)
 		tagsByGroup[group] = tagGroup.GetTags()

@@ -1,4 +1,4 @@
-resource "aws_athena_workgroup" "analytics" {
+resource "aws_athena_workgroup" "analytics1" {
   name = "analytics"
 
   # no tags
